@@ -1,0 +1,22 @@
+<a [href]="'/services/' + service.slug" class="group block">
+
+    <div class="flex flex-col gap-[16px] sm:gap-[20px]">
+
+        <img [src]="service.image"
+            class="w-full aspect-[4/3] sm:aspect-[3/4] lg:aspect-[4/5] object-cover rounded-[12px] transition duration-300 group-hover:opacity-90"
+            alt="{{ service.title }}" />
+
+        <div class="flex flex-col gap-[10px] min-w-0">
+
+            <h5 class="text-[20px] sm:text-[22px] lg:text-[24px] leading-[1.4] lg:leading-[33.6px] tracking-[-0.5px] lg:tracking-[-0.8px] font-[500] text-[#001305] break-words">
+                {{ service.title }}
+            </h5>
+
+            <p class="text-[15px] sm:text-[16px] leading-[26px] sm:leading-[28.8px] tracking-[-0.2px] font-[400] text-[#676565] break-words">
+                {{ service.description }}
+            </p>
+
+        </div>
+
+    </div>
+</a>
